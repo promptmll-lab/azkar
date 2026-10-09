@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>أذكار الصباح والمساء | حصن المسلم</title>
+<meta name="description" content="موقع أذكار الصباح والمساء الصحيحة بمصادرها من الكتاب والسنة - مع عداد ومسبحة لكل ذكر" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dawod/thmanyah-font-web/index.css" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤲</text></svg>" />
+</head>
+<body data-theme="dark">
+
+<div class="bg-pattern" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <div class="brand">
+      <div class="brand-icon">☪</div>
+      <div>
+        <h1>حصن المسلم</h1>
+        <p>أذكار الصباح والمساء الصحيحة</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="font-controls" role="group" aria-label="التحكم في حجم الخط">
+        <button id="font-decrease" title="تصغير الخط">أ−</button>
+        <span id="font-value">100%</span>
+        <button id="font-increase" title="تكبير الخط">أ+</button>
+      </div>
+      <button id="theme-toggle" class="theme-btn" title="تبديل المظهر">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+        <span id="theme-label">فاتح</span>
+      </button>
+    </div>
+  </div>
+  <div class="progress-wrap">
+    <div class="container progress-info">
+      <span id="progress-text">0 من 0 مكتمل</span>
+      <span id="progress-percent">0%</span>
+    </div>
+    <div class="progress-bar"><div id="progress-fill"></div></div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h2 id="hero-title">🌅 أذكار الصباح</h2>
+    <p id="hero-desc">ابدأ يومك بذكر الله — جميع الأذكار صحيحة بمصادرها من صحيح البخاري ومسلم والسنن</p>
+    <div class="hero-actions">
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="sabah" role="tab">🌅 الصباح <span class="count" id="count-sabah"></span></button>
+        <button class="tab" data-tab="masaa" role="tab">🌙 المساء <span class="count" id="count-masaa"></span></button>
+      </div>
+      <div class="hero-tools">
+        <button id="reset-all" class="btn-ghost">↺ إعادة التصفير</button>
+        <button id="hide-done" class="btn-ghost">👁 إخفاء المكتملة</button>
+      </div>
+    </div>
+    <div class="time-hint" id="time-hint"></div>
+  </section>
+
+  <section id="azkar-list" class="azkar-list"></section>
+
+  <section class="sources-box">
+    <h3>📚 منهجية التوثيق</h3>
+    <p>جميع الأذكار مأخوذة من <strong>حصن المسلم</strong> و <strong>عمل اليوم والليلة</strong>، وخرّجنا كل ذكر بمصدره الأصلي: رقم الحديث في صحيح البخاري وصحيح مسلم وسنن أبي داود والترمذي والنسائي وابن ماجه ومسند أحمد، مع بيان درجة الصحة من تصحيح الألباني وابن باز والنووي رحمهم الله.</p>
+    <ul>
+      <li>وقت أذكار الصباح: من طلوع الفجر إلى طلوع الشمس، وقيل إلى الزوال</li>
+      <li>وقت أذكار المساء: من بعد العصر إلى غروب الشمس، وقيل إلى منتصف الليل</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>صُنع بحب لذكر الله • اللهم أعنا على ذكرك وشكرك وحسن عبادتك</p>
+    <p class="small">﴿ فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ ﴾ — البقرة 152</p>
+  </footer>
+</main>
+
+<button id="to-top" title="العودة للأعلى">↑</button>
+
+<script src="app.js"></script>
+</body>
+</html>
